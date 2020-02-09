@@ -4,6 +4,7 @@ function toggleBox(id) {
 
 //Get the button:
 mybutton = document.getElementById("Btt");
+navBar = document.getElementById("navbarid");
 
 // When the user scrolls down 20px from the top of the document, show the button
 window.onscroll = function() {scrollFunction()};
@@ -14,12 +15,14 @@ function scrollFunction() {
 	mybutton.style.animationName = "forwardsAnim";
 	mybutton.style.animationDuration = "500ms";
 	mybutton.style.animationFillMode = "forwards";
+	navBar.style.boxShadow = "0 0 5px black";
 	
   } else {
 	mybutton.style.animationName = "backwardsAnim";
 	mybutton.style.animationDuration = "500ms";
 	mybutton.style.animationFillMode = "forwards";
     mybutton.style.visibility = "hidden";
+	navBar.style.boxShadow = "0 0 0px black";
   }
 }
 

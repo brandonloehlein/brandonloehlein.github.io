@@ -5,9 +5,12 @@ overflow-x:hidden;}
 body {color: #666;}
 
 /* nav style */ 
+.navbar {position: sticky;
+    top: 0;
+    z-index: 1;}
 
 .nav-color {background-color: #283444;}
-.nav-border {border-bottom: solid 3px #5691e7;}
+.nav-border {/*border-bottom: solid 3px #5691e7; */}
 .nav-link {padding: 20px;
 width: 125px;}
 .nav-item {text-align: center;}
