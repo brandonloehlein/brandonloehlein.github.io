@@ -15,14 +15,12 @@ function scrollFunction() {
 	mybutton.style.animationName = "forwardsAnim";
 	mybutton.style.animationDuration = "500ms";
 	mybutton.style.animationFillMode = "forwards";
-	navBar.style.boxShadow = "0 0 5px black";
 	
   } else {
 	mybutton.style.animationName = "backwardsAnim";
 	mybutton.style.animationDuration = "500ms";
 	mybutton.style.animationFillMode = "forwards";
     mybutton.style.visibility = "hidden";
-	navBar.style.boxShadow = "0 0 0px black";
   }
 }
 
