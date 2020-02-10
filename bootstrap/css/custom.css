@@ -31,7 +31,7 @@ transition: all 200ms linear;}
 .container {max-width: 100%;}
 
 .col-start {padding: 200px 0 200px 0;
-background-image: url("../../img/bubble-min.jpg");
+background-image: url(../../img/bubble.jpg);
 background-position: center;
 background-size: cover;
 background-repeat: no-repeat;
