@@ -31,12 +31,11 @@ transition: all 200ms linear;}
 .container {max-width: 100%;}
 
 .col-start {padding: 200px 0 200px 0;
-background-image: url(../../img/bubble.jpg);
+background-image: url(../../img/bubble.jpg), linear-gradient(10deg, rgba(0,0,56,1) 0%, rgba(86,145,231,1) 100%);
 background-position: center;
 background-size: cover;
 background-repeat: no-repeat;
-color: #ffffff;
-background-color: #9c9c9c;}
+color: #ffffff;}
 .col-gen {padding: 100px 0 100px 0;}
 
 .col-color-dark {background-color: #283444;
