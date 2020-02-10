@@ -35,7 +35,8 @@ background-image: url(../../img/bubble.jpg);
 background-position: center;
 background-size: cover;
 background-repeat: no-repeat;
-color: #ffffff;}
+color: #ffffff;
+background-color: #9c9c9c;}
 .col-gen {padding: 100px 0 100px 0;}
 
 .col-color-dark {background-color: #283444;
