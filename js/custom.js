@@ -4,7 +4,7 @@ function toggleBox(id) {
 
 // Function below closes the mobile nav menu on any nav element click
 
- $(function(){ 
+$(function(){ 
      var navMain = $(".navbar-collapse"); // avoid dependency on #id
      // "a:not([data-toggle])" - to avoid issues caused
      // when you have dropdown inside navbar
@@ -12,6 +12,7 @@ function toggleBox(id) {
          navMain.collapse('hide');
      });
  });
+
 //Get the button:
 mybutton = document.getElementById("Btt");
 navBar = document.getElementById("navbarid");
