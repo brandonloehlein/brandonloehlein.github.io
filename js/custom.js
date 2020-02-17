@@ -1,5 +1,10 @@
 function toggleBox(id) {
 	$(id).toggleClass("box-p-toggle");
+	if($("#js").hasClass("box-p-toggle")) {
+	$("#jq").css("margin-top", "0px");	
+	} else {
+	$("#jq").css("margin-top", "50px");	
+	}
 }
 
 // Function below closes the mobile nav menu on any nav element click
@@ -22,16 +27,10 @@ window.onscroll = function() {scrollFunction()};
 
 function scrollFunction() {
   if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-    mybutton.style.visibility = "visible";
-	mybutton.style.animationName = "forwardsAnim";
-	mybutton.style.animationDuration = "500ms";
-	mybutton.style.animationFillMode = "forwards";
+    $(".btt").addClass("btt-show");
 	
   } else {
-	mybutton.style.animationName = "backwardsAnim";
-	mybutton.style.animationDuration = "500ms";
-	mybutton.style.animationFillMode = "forwards";
-    mybutton.style.visibility = "hidden";
+	$(".btt").removeClass("btt-show");
   }
 }
 

@@ -1,7 +1,8 @@
 html {scroll-behavior: smooth;
 transition: all 1s linear;}
 
-body {color: #666;}
+body {color: #666;
+overflow-x: hidden;}
 
 /* nav style */ 
 .navbar {position: fixed;
@@ -37,12 +38,21 @@ background-position: center;
 background-size: cover;
 background-repeat: no-repeat;
 color: #ffffff;}
+
+.col-fh {height: 100vh;
+display: grid;
+align-content: center;}
+
 .col-gen {padding: 100px 0 100px 0;}
+
+.col-bot {padding: 100px 0 175px 0;}
 
 .col-color-dark {background-color: #283444;
 color: #ffffff;}
 
 .div-p-b {padding-bottom: 50px;}
+
+#portfoliosec, #aboutsec, #skillssec, #contactsec {margin-top: -64px;}
 
 /* Paragraph editing */
 
@@ -80,6 +90,7 @@ text-align: center;
 display: inline-block;
 list-style-type: none;
 font-weight: bold;
+
 }
 
 .custom-ls-li {
@@ -148,7 +159,7 @@ width: 450px;}
 
 
 /* header styling */
-.h-margin {margin: 0;}
+.h-margin {margin: 0px 0px 25px 0px;}
 
 .h-padding-b {padding-bottom: 20px;
 padding-top: 20px;}
@@ -191,7 +202,7 @@ box-shadow: 0 0 10px #000000;}
 
 /* Back to top button */
 
-#Btt {
+.btt {
   visibility: hidden; /* Hidden by default */
   position: fixed; /* Fixed/sticky position */
   bottom: 20px; /* Place the button at the bottom of the page */
@@ -206,8 +217,17 @@ box-shadow: 0 0 10px #000000;}
   padding: 10px; /* Some padding */
   border-radius: 0px; /* Rounded corners */
   opacity: 0;
-  transition:visibility linear 0.5s;
+  transition: all linear 0.5s;
+  animation-name: backwardsAnim;
+  animation-duration: 500ms;
+  animation-fill-mode: forwards;
 }
+
+.btt-show {visibility: visible;
+animation-name: forwardsAnim;
+animation-duration: 500ms;
+animation-fill-mode: forwards;
+transition: all linear 0.5s;}
 
 #Btt:active {
   background-color: #555; /* Add a dark-grey background on hover */
@@ -226,7 +246,7 @@ box-shadow: 0 0 10px #000000;}
 /* Image hover */ 
 
 .hoverdiv {display: inline-block;
-margin-top: 50px;}
+margin-top: 25px;}
 
 .hovereffect {
   width: 100%;
@@ -318,7 +338,8 @@ margin-top: 50px;}
 
 /* media queries */ 
 
-@media screen and (max-width: 1100px) {
+@media screen and (max-width: 625px) {
+	
   .custom-marl {
 	  margin: 0px;
   }
@@ -326,6 +347,8 @@ margin-top: 50px;}
   .custom-marr {
 	  margin: 0px;
   }
+  
+  .ldiv-p3 > .custom-marr {margin-top: -50px;}
   
   .navbar {padding: 0;}
   .navbar-toggler {margin: 8px;}
@@ -336,12 +359,20 @@ margin-top: 50px;}
   .nav-link {margin-left: 25px;
   width: 100%;}
   
-  .li-box {width: 250px;}
-  .list-div {width: 250px;}
+  .li-box {width: 250px;
+  border-radius: 0px;}
+  .list-div {width: 250px;
+  border-radius: 0px;}
+  
+  #portfoliosec, #aboutsec, #skillssec, #contactsec {margin-top: -54px;}
 
   
   .bs-p {margin: 0 auto;
   width: 250px;}
   
   a.info {font-size: 14px;}
+  
+  #jq[data-aos-delay='200'] {transition-delay: 0s;}
+  #bs[data-aos-delay='200'] {transition-delay: 0s;}
+  #ps[data-aos-delay='200'] {transition-delay: 0s;}
 }
