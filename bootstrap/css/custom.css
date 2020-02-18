@@ -1,17 +1,30 @@
+
+@import url('https://fonts.googleapis.com/css?family=Raleway:400,700|Saira+Semi+Condensed:400,700&display=swap');
+
+
+
 html {scroll-behavior: smooth;
 transition: all 1s linear;}
 
 body {color: #666;
-overflow-x: hidden;}
+overflow-x: hidden;
+font-family: 'Raleway', sans-serif;}
 
 /* nav style */ 
+.navbar-toggler {border: none;
+padding: 10px;
+border-radius: 0px;}
+.navbar-toggler:active {background-color: #1c242f;}
 .navbar {position: fixed;
 width: 100%;
     top: 0;
-    z-index: 1;
-	box-shadow: 0 0 5px black;}
+    z-index: 11;
+	box-shadow: 0 0 5px black;
+	font-family: 'Saira Semi Condensed', sans-serif;
+}
 
-.nav-color {background-color: #283444;}
+.nav-color {background-color: #283444;
+background-image: linear-gradient(to right bottom, #283444, #283649, #28384f, #283a54, #283c5a);}
 .nav-border {/*border-bottom: solid 3px #5691e7; */}
 .nav-link {padding: 20px;
 width: 125px;}
@@ -33,7 +46,7 @@ transition: all 200ms linear;}
 .container {max-width: 100%;}
 
 .col-start {padding: 200px 0 200px 0;
-background-image: url(../../img/bubble.jpg), linear-gradient(10deg, rgba(0,0,56,1) 0%, rgba(86,145,231,1) 100%);
+background-image: url(../../img/bubblesmall.jpg), linear-gradient(10deg, rgba(0,0,56,1) 0%, rgba(86,145,231,1) 100%);
 background-position: center;
 background-size: cover;
 background-repeat: no-repeat;
@@ -215,12 +228,16 @@ box-shadow: 0 0 10px #000000;}
   color: white; /* Text color */
   cursor: pointer; /* Add a mouse pointer on hover */
   padding: 10px; /* Some padding */
-  border-radius: 0px; /* Rounded corners */
+  border-radius: 50px; /* Rounded corners */
+  width: 50px;
+  height: 50px;
+  line-height: 10px;
   opacity: 0;
   transition: all linear 0.5s;
   animation-name: backwardsAnim;
   animation-duration: 500ms;
   animation-fill-mode: forwards;
+  font-size: 30px;
 }
 
 .btt-show {visibility: visible;
@@ -228,6 +245,18 @@ animation-name: forwardsAnim;
 animation-duration: 500ms;
 animation-fill-mode: forwards;
 transition: all linear 0.5s;}
+
+.btt-arrow {  border: solid #fff;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 4px;
+    transform: rotate(-135deg);
+  -webkit-transform: rotate(-135deg);}
+  
+button:focus {outline: 0;
+transition: all 100ms linear;}
+button:active {background-color: #666;
+transition: all 100ms linear;}
 
 #Btt:active {
   background-color: #555; /* Add a dark-grey background on hover */
@@ -371,6 +400,8 @@ margin-top: 25px;}
   width: 250px;}
   
   a.info {font-size: 14px;}
+  
+  .hoverdiv {width: 300px;}
   
   #jq[data-aos-delay='200'] {transition-delay: 0s;}
   #bs[data-aos-delay='200'] {transition-delay: 0s;}
