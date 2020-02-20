@@ -1,95 +1,140 @@
 <!doctype html>
 <html lang="en">
-  <head>
+
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-158827878-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+        
+          gtag('config', 'UA-158827878-1');
+    </script>
+
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, minimum-scale=1">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
-	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-	<link rel="stylesheet" href="bootstrap/css/custom.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="bootstrap/css/custom.css">
     <title>Brandon Loehlein | Web Designer</title>
-	<link rel="shortcut icon" href="favicon.png" type="image/x-icon">
-	<link rel="icon" href="favicon.png" type="image/x-icon">
-  </head>
-  <body id="bootstrap-override">
-  <button onclick="topFunction()" id="Btt" class="btt" title="Go to top"><span class="btt-arrow"></span></button>
-   <nav class="navbar navbar-dark navbar-expand-md nav-color nav-border" id="navbarid">
-   <a class="navbar-brand" href="#topsec" onclick="topFunction()"><img class="img-logo" src="../../img/logo.png" alt="Logo"></a>
-   <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+    <link rel="icon" href="favicon.png" type="image/x-icon">
+</head>
+
+<body id="bootstrap-override">
+    <button onclick="topFunction()" id="Btt" class="btt" title="Go to top"><span class="btt-arrow"></span></button>
+    <nav class="navbar navbar-dark navbar-expand-md nav-color nav-border" id="navbarid">
+        <a class="navbar-brand" href="#topsec" onclick="topFunction()"><img class="img-logo" src="../../img/logo.png" alt="Logo"></a>
+        <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
     <span class="navbar-toggler-icon"></span>
   </button>
-   <div class="collapse navbar-collapse" id="collapsibleNavbar">
-   <ul class="navbar-nav">
-   <li class="nav-item"><a class="nav-link nav-link-color scroll-link" href="#skillssec">SKILLS</a></li>
-   <li class="nav-item"><a class="nav-link nav-link-color scroll-link" href="#aboutsec">ABOUT</a></li>
-   <li class="nav-item"><a class="nav-link nav-link-color scroll-link" href="#portfoliosec">PORTFOLIO</a></li>
-   <li class="nav-item"><a class="nav-link nav-link-color scroll-link" href="#contactsec">CONTACT</a></li>
-   </ul>
-   </div>
-</nav>
-<div class="container">
-  <div class="row row-cols-1">
-  <div class="col col-start col-fh"><h1>Hi, I'm Brandon Loehlein.</h1>
-  <p class="bs-p">I'm a freelance web developer and graphic designer.</p>
-  </div>
-  <span id="skillssec"></span>
-  <div class="col col-gen">
-  <h3 class="h-margin">What I do</h3>
-  <div class="div-center">
-  <p class="bs-p-concise">I design websites for people as a passion and for fun. I have six years of experience with front-end design, starting in high school and then several years of formal secondary education.<br><br>
-  The skill titles below are interactable - click (or tap) on them to read more about my experience.</p>
-  </div>
-  <h3 class="h-margin h-padding-b">What I know</h3>
-  <ul class="custom-ls custom-marl">
-  <li class="custom-ls-li li-box" id="html" onclick="toggleBox(html);" data-aos="zoom-in">HTML<div class="list-div"><p class="ldiv-p1">6 years of experience, dating back to 2014.</p></div></li>
-  <li class="custom-ls-li li-box" id="css" onclick="toggleBox(css);" data-aos="zoom-in">CSS<div class="list-div"><p class="ldiv-p2">6 years of experience, dating back to 2014.</p></div></li>
-  <li class="custom-ls-li li-box" id="js" onclick="toggleBox(js);" data-aos="zoom-in">JavaScript<div class="list-div"><p class="ldiv-p3">3 years of experience, dating back to 2017.</p></div></li>
-  </ul>
-  <ul class="custom-ls custom-marr">
-    <li class="custom-ls-li li-box" id="jq" onclick="toggleBox(jq);" data-aos="zoom-in" data-aos-delay="200">jQuery<div class="list-div"><p class="ldiv-p4">2 years of experience, dating back to 2018.</p></div></li>
-  <li class="custom-ls-li li-box" id="bs" onclick="toggleBox(bs);" data-aos="zoom-in" data-aos-delay="200">Bootstrap<div class="list-div"><p class="ldiv-p5">3 years of experience, dating back to 2017.</p></div></li>
-  <li class="custom-ls-li li-box" id="ps" onclick="toggleBox(ps);" data-aos="zoom-in" data-aos-delay="200">Photoshop<div class="list-div"><p class="ldiv-p6">5 years of experience, dating back to 2015.</p></div></li>
-  </ul>
-  </div>
-  <span id="aboutsec"></span>
-  <div class="col col-gen col-color-dark">
-  <h3 class="h-margin h-padding-b">Who I Am</h3>
-  <div class="div-center div-p-b">
-  <p class="bs-p-concise bs-p-lg">I'm twenty two years old and have been studying web design for six years now. I started at the age of sixteen, and almost instantly fell in love with code and what you could do with it. My first job was a year later - and certainly rough around the edges - but successful. Since then, I've been practicing and improving consistently. Following High School, I took a year away from studies to work and support my late grandmother before continuing on into College, where I took courses for two years in order to get a certificate in Web Design.</p>
-  </div>
-  <img src="img\me.jpg" class="mx-auto d-block img-round img-border1" width="200" height="200" alt="Picture of Site Author">
-  </div>
-  <span id="portfoliosec"></span>
-  <div class="col col-bot"><h3 class="h-margin" data-aos="fade-right" data-aos-delay='100' data-aos-easing="ease-out" data-aos-duration="750">Portfolio</h3>
-  <div class="div-center">
-  <p class="bs-p-concise" data-aos="fade-left" data-aos-delay='300' data-aos-easing="ease-out" data-aos-duration="750">I don't have much to show on web design, as I'm a recent college graduate and much of my previous work was done from high school - however, I still have something to show! Hover over the images below to see the name of each project and my role in the development of them.</p>
-  </div>
- <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 hoverdiv" data-aos="fade-right" data-aos-delay='500' data-aos-easing="ease-out" data-aos-duration="750">
-    <div class="hovereffect">
-        <img class="img-responsive" src="../../img/fpcsmall.jpg" alt="">
-        <div class="overlay">
-           <a class="info" href="https://50plusclub.neocities.org/" target="_blank">Washington 50 Plus Club<br><p class="base-p">Website Design</p></a>
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <ul class="navbar-nav">
+                <li class="nav-item"><a class="nav-link nav-link-color scroll-link" href="#skillssec">SKILLS</a></li>
+                <li class="nav-item"><a class="nav-link nav-link-color scroll-link" href="#aboutsec">ABOUT</a></li>
+                <li class="nav-item"><a class="nav-link nav-link-color scroll-link" href="#portfoliosec">PORTFOLIO</a></li>
+                <li class="nav-item"><a class="nav-link nav-link-color scroll-link" href="#contactsec">CONTACT</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="row row-cols-1">
+            <div class="col col-start col-fh">
+                <h1>Hi, I'm Brandon Loehlein.</h1>
+                <p class="bs-p">I'm a freelance web developer and graphic designer.</p>
+            </div>
+            <span id="skillssec"></span>
+            <div class="col col-gen">
+                <h3 class="h-margin">What I do</h3>
+                <div class="div-center">
+                    <p class="bs-p-concise">I design websites for people as a passion and for fun. I have six years of experience with front-end design, starting in high school and then several years of formal secondary education.<br><br> The skill titles below are interactable
+                        - click (or tap) on them to read more about my experience.</p>
+                </div>
+                <h3 class="h-margin h-padding-b">What I know</h3>
+                <ul class="custom-ls custom-marl">
+                    <li class="custom-ls-li li-box" id="html" onclick="toggleBox(html);" data-aos="zoom-in">HTML
+                        <div class="list-div">
+                            <p class="ldiv-p1">6 years of experience, dating back to 2014.</p>
+                        </div>
+                    </li>
+                    <li class="custom-ls-li li-box" id="css" onclick="toggleBox(css);" data-aos="zoom-in">CSS
+                        <div class="list-div">
+                            <p class="ldiv-p2">6 years of experience, dating back to 2014.</p>
+                        </div>
+                    </li>
+                    <li class="custom-ls-li li-box" id="js" onclick="toggleBox(js);" data-aos="zoom-in">JavaScript
+                        <div class="list-div">
+                            <p class="ldiv-p3">3 years of experience, dating back to 2017.</p>
+                        </div>
+                    </li>
+                </ul>
+                <ul class="custom-ls custom-marr">
+                    <li class="custom-ls-li li-box" id="jq" onclick="toggleBox(jq);" data-aos="zoom-in" data-aos-delay="200">jQuery
+                        <div class="list-div">
+                            <p class="ldiv-p4">2 years of experience, dating back to 2018.</p>
+                        </div>
+                    </li>
+                    <li class="custom-ls-li li-box" id="bs" onclick="toggleBox(bs);" data-aos="zoom-in" data-aos-delay="200">Bootstrap
+                        <div class="list-div">
+                            <p class="ldiv-p5">3 years of experience, dating back to 2017.</p>
+                        </div>
+                    </li>
+                    <li class="custom-ls-li li-box" id="ps" onclick="toggleBox(ps);" data-aos="zoom-in" data-aos-delay="200">Photoshop
+                        <div class="list-div">
+                            <p class="ldiv-p6">5 years of experience, dating back to 2015.</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <span id="aboutsec"></span>
+            <div class="col col-gen col-color-dark">
+                <h3 class="h-margin h-padding-b">Who I Am</h3>
+                <div class="div-center div-p-b">
+                    <p class="bs-p-concise bs-p-lg">I'm twenty two years old and have been studying web design for six years now. I started at the age of sixteen, and almost instantly fell in love with code and what you could do with it. My first job was a year later - and certainly
+                        rough around the edges - but successful. Since then, I've been practicing and improving consistently. Following High School, I took a year away from studies to work and support my late grandmother before continuing on into College,
+                        where I took courses for two years in order to get a certificate in Web Design.</p>
+                </div>
+                <img src="img\me.jpg" class="mx-auto d-block img-round img-border1" width="200" height="200" alt="Picture of Site Author">
+            </div>
+            <span id="portfoliosec"></span>
+            <div class="col col-bot">
+                <h3 class="h-margin" data-aos="fade-right" data-aos-delay='100' data-aos-easing="ease-out" data-aos-duration="750">Portfolio</h3>
+                <div class="div-center">
+                    <p class="bs-p-concise" data-aos="fade-left" data-aos-delay='300' data-aos-easing="ease-out" data-aos-duration="750">I don't have much to show on web design, as I'm a recent college graduate and much of my previous work was done from high school - however, I still have something to show! Hover over the images below to see the name of each project
+                        and my role in the development of them.</p>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 hoverdiv" data-aos="fade-right" data-aos-delay='500' data-aos-easing="ease-out" data-aos-duration="750">
+                    <div class="hovereffect">
+                        <img class="img-responsive" src="../../img/fpcsmall.jpg" alt="">
+                        <div class="overlay">
+                            <a class="info" href="https://50plusclub.neocities.org/" target="_blank">Washington 50 Plus Club<br><p class="base-p">Website Design</p></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col col-gen col-color-dark" id="contactsec">
+                <h3 class="h-margin">Contact Me</h3>
+                <p class="contact-p">If you'd like to reach out, send an email to <a class="darkblue-c" href="mailto:bdloehlein@gmail.com">bdloehlein@gmail.com</a>.</p>
+            </div>
         </div>
     </div>
-</div>
-  </div>
-  <div class="col col-gen col-color-dark" id="contactsec"><h3 class="h-margin">Contact Me</h3>
-  <p class="contact-p">If you'd like to reach out, send an email to <a class="darkblue-c" href="mailto:bdloehlein@gmail.com">bdloehlein@gmail.com</a>.</p>
-  </div>
-  </div>
-</div>
-<a href="javascript:void(0);" id="scroll" title="Scroll to Top" style="display: none;">Top<span></span></a>
+    <a href="javascript:void(0);" id="scroll" title="Scroll to Top" style="display: none;">Top<span></span></a>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="bootstrap/js/bootstrap.min.js"></script>
-	<script src="js/custom.js"></script>
-		<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-	<script>
-	AOS.init();
-	</script>
-	<script>window.onscroll = function() {scrollFunction()};</script>
-  </body>
+    <script src="js/custom.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <script>
+        window.onscroll = function() {scrollFunction()};
+    </script>
+</body>
+
 </html>
