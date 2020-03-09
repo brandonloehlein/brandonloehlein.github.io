@@ -15,6 +15,7 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, minimum-scale=1">
+    <meta name="description" content="The Portfolio Website for Brandon Loehlein, a front-end web designer and graphic designer." />
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
@@ -43,7 +44,7 @@
     <div class="container">
         <div class="row row-cols-1">
             <div class="col col-start col-fh">
-                <h1>Hi, I'm Brandon Loehlein.</h1>
+                <h1>Hi, I'm Brandon.</h1>
                 <p class="bs-p">I'm a freelance web developer and graphic designer.</p>
             </div>
             <span id="skillssec"></span>
@@ -54,39 +55,109 @@
                         - click (or tap) on them to read more about my experience.</p>
                 </div>
                 <h3 class="h-margin h-padding-b">What I know</h3>
-                <ul class="custom-ls custom-marl">
-                    <li class="custom-ls-li li-box" id="html" onclick="toggleBox(html);" data-aos="zoom-in">HTML
-                        <div class="list-div">
-                            <p class="ldiv-p1">6 years of experience, dating back to 2014.</p>
-                        </div>
+                <ul class="custom-ls">
+                    <li class="custom-ls-li li-box hvr-outline-out" id="html" data-toggle="modal" data-target="#modal1">HTML
                     </li>
-                    <li class="custom-ls-li li-box" id="css" onclick="toggleBox(css);" data-aos="zoom-in">CSS
-                        <div class="list-div">
-                            <p class="ldiv-p2">6 years of experience, dating back to 2014.</p>
-                        </div>
+					<div class="modal fade" id="modal1">
+					<div class="modal-dialog">
+					<div class="modal-content">
+					<div class="modal-header">
+					<h3 class="h3nopadding">HTML</h3>
+					</div>
+					<div class="modal-body">
+					I began to learn HTML at the start of 2014 - A class was offered during my sophomore year of High School, and after the first day I was hooked. I have 6 years of experience working with HTML. 
+					</div>
+					<div class="modal-footer">
+					<input class="btn btn-primary btn-modal" data-dismiss="modal" value="Close" type="submit">
+					</div>
+					</div>
+					</div>
+					</div>
+                    <li class="custom-ls-li li-box hvr-outline-out" id="css" data-toggle="modal" data-target="#modal2">CSS
                     </li>
-                    <li class="custom-ls-li li-box" id="js" onclick="toggleBox(js);" data-aos="zoom-in">JavaScript
-                        <div class="list-div">
-                            <p class="ldiv-p3">3 years of experience, dating back to 2017.</p>
-                        </div>
+					<div class="modal fade" id="modal2">
+					<div class="modal-dialog">
+					<div class="modal-content">
+					<div class="modal-header">
+					<h3 class="h3nopadding">CSS</h3>
+					</div>
+					<div class="modal-body">
+					After learning HTML, I spent time doing independent study under the guidance of my former teacher, James Otto, in order to learn CSS. I now have 6 years of experience, dating back to 2014 - the same as HTML.
+					</div>
+					<div class="modal-footer">
+					<input class="btn btn-primary btn-modal" data-dismiss="modal" value="Close" type="submit">
+					</div>
+					</div>
+					</div>
+					</div>
+                    <li class="custom-ls-li li-box hvr-outline-out" id="js" data-toggle="modal" data-target="#modal3">JavaScript
                     </li>
-                </ul>
-                <ul class="custom-ls custom-marr">
-                    <li class="custom-ls-li li-box" id="jq" onclick="toggleBox(jq);" data-aos="zoom-in" data-aos-delay="200">jQuery
-                        <div class="list-div">
-                            <p class="ldiv-p4">2 years of experience, dating back to 2018.</p>
-                        </div>
+					<div class="modal fade" id="modal3">
+					<div class="modal-dialog">
+					<div class="modal-content">
+					<div class="modal-header">
+					<h3 class="h3nopadding">JavaScript</h3>
+					</div>
+					<div class="modal-body">
+					After graduating high school in 2016, I took a year to work and provide for my late grandmother before going to college. In 2017 I began going to Saint Paul College and began to improve my skills, also learning JavaScript. 
+					</div>
+					<div class="modal-footer">
+					<input class="btn btn-primary btn-modal" data-dismiss="modal" value="Close" type="submit">
+					</div>
+					</div>
+					</div>
+					</div>
+                    <li class="custom-ls-li li-box hvr-outline-out" id="jq" data-toggle="modal" data-target="#modal4">jQuery
                     </li>
-                    <li class="custom-ls-li li-box" id="bs" onclick="toggleBox(bs);" data-aos="zoom-in" data-aos-delay="200">Bootstrap
-                        <div class="list-div">
-                            <p class="ldiv-p5">3 years of experience, dating back to 2017.</p>
-                        </div>
+					<div class="modal fade" id="modal4">
+					<div class="modal-dialog">
+					<div class="modal-content">
+					<div class="modal-header">
+					<h3 class="h3nopadding">jQuery</h3>
+					</div>
+					<div class="modal-body">
+					Once I had learned the basics of JavaScript, I was then taught jQuery and along with it how to use general JavaScript libraries. I've known how to do this since 2017 as well.
+					</div>
+					<div class="modal-footer">
+					<input class="btn btn-primary btn-modal" data-dismiss="modal" value="Close" type="submit">
+					</div>
+					</div>
+					</div>
+					</div>
+                    <li class="custom-ls-li li-box hvr-outline-out" id="bs" data-toggle="modal" data-target="#modal5">Bootstrap
                     </li>
-                    <li class="custom-ls-li li-box" id="ps" onclick="toggleBox(ps);" data-aos="zoom-in" data-aos-delay="200">Photoshop
-                        <div class="list-div">
-                            <p class="ldiv-p6">5 years of experience, dating back to 2015.</p>
-                        </div>
+					<div class="modal fade" id="modal5">
+					<div class="modal-dialog">
+					<div class="modal-content">
+					<div class="modal-header">
+					<h3 class="h3nopadding">Bootstrap</h3>
+					</div>
+					<div class="modal-body">
+					One of the few things I picked up that's not considered a new language, Bootstrap was a tool I simply had to learn. A kit that could help improve my site design and make the best of even my weakest areas in the field, it was arguably necessary. I've known how to use Bootstrap since 2017.
+					</div>
+					<div class="modal-footer">
+					<input class="btn btn-primary btn-modal" data-dismiss="modal" value="Close" type="submit">
+					</div>
+					</div>
+					</div>
+					</div>
+                    <li class="custom-ls-li li-box hvr-outline-out" id="ps" data-toggle="modal" data-target="#modal6">Photoshop
                     </li>
+					<div class="modal fade" id="modal6">
+					<div class="modal-dialog">
+					<div class="modal-content">
+					<div class="modal-header">
+					<h3 class="h3nopadding">Photoshop</h3>
+					</div>
+					<div class="modal-body">
+					Back in my senior year of high school - 2016 - I had the opportunity to learn in-depth how Photoshop works. I've since used it as my go-to for image editing and manipulation and have 4 years of experience with it.
+					</div>
+					<div class="modal-footer">
+					<input class="btn btn-primary btn-modal" data-dismiss="modal" value="Close" type="submit">
+					</div>
+					</div>
+					</div>
+					</div>
                 </ul>
             </div>
             <span id="aboutsec"></span>
@@ -136,5 +207,4 @@
         window.onscroll = function() {scrollFunction()};
     </script>
 </body>
-
 </html>

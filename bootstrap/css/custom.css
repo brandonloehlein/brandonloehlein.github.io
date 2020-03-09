@@ -21,7 +21,7 @@
     position: fixed;
      width: 100%;
      top: 0;
-     z-index: 11;
+     z-index: 13;
      box-shadow: 0 0 5px black;
      font-family: 'Saira Semi Condensed', sans-serif;
 }
@@ -129,27 +129,63 @@
  .custom-ls {
      padding: 0;
      text-align: center;
-     display: inline-block;
+     display: flex;
      list-style-type: none;
      font-weight: bold;
+	 justify-content: center;
 }
- .custom-ls-li {
-     transition: all 200ms linear;
-}
- .custom-ls-li:hover {
-     cursor: default;
-}
+
+ .custom-ls-li {border-radius: 50%;
+ transition: all 200ms ease-in-out !important;}
+
  .li-box {
     padding: 20px;
-     border: solid 3px #283444;
      background-color: #283444;
-     margin: 50px 0px 0px 0px;
-     border-radius: 50px;
-     width: 500px;
+     margin: 25px;
+	 display: grid;
+	 align-items: center;
+	 font-weight: normal;
+     width: 150px;
+	 height: 150px;
      color: #ffffff;
-     transition: all 200ms ease-in-out;
      z-index: 10;
+	 cursor: pointer;
+	 transition: all 100ms linear;
 }
+
+
+/* MODAL EDITING */ 
+
+.modal-open {padding-right: 0px !important;}
+
+.modal-dialog {pointer-events: auto;
+top: 35%;}
+
+.modal-content {border-radius: 10px;
+border: none;
+box-shadow: 0 0 5px rgba(0,0,0, 0.5);
+background-image: linear-gradient(to right bottom, #283444, #283649, #28384f, #283a54, #283c5a);
+color: #fff;
+background-clip: inherit;}
+
+.modal-body {
+margin: 1rem;
+font-weight: normal;
+text-align: left;}
+
+.modal-header {font-family: 'Saira Semi Condensed', sans-serif;
+border: none;
+color: #5691e7;}
+
+.modal-footer {border: none;}
+
+.h3nopadding {margin: 0px;}
+
+#modal1 {padding-right: 0px !important;
+}
+
+.li-box:hover {background-color: #5691e7;}
+ 
  .custom-marl {
     margin-right: 20px;
 }
@@ -172,6 +208,7 @@
      justify-content: center;
      transition: all 200ms ease-in-out;
 }
+
  .list-div > p {
     margin: 0;
 }
@@ -247,6 +284,13 @@
     background-color: #71589b;
      border-color: #71589b;
 }
+
+.btn-modal {
+background-color: #d64141;
+border: none;}
+
+.btn-modal:hover {background-color: #a72424;}
+
 /* card styling */
  .fpc-card {
     border: solid 5px #283444;
@@ -426,8 +470,83 @@
 }
  .hovereffect a.info:hover {
 }
+
+/* call to trigger - ONLY FOR JS TO READ, not to add to an element! */ 
+
+.triggerFadeIn {}
+
+/* The reveal for trigger fade in AKA What I'm tagging to the affected element*/
+	.revealFadeIn {
+		opacity: 0;
+		-webkit-transform: scale(0.9);
+			 -moz-transform: scale(0.9);
+				-ms-transform: scale(0.9);
+				 -o-transform: scale(0.9);
+						transform: scale(0.9);
+		-webkit-transition: all 1s ease-in-out;
+			 -moz-transition: all 1s ease-in-out;
+				-ms-transition: all 1s ease-in-out;
+				 -o-transition: all 1s ease-in-out;
+						transition: all 1s ease-in-out;
+	}
+	.revealFadeIn.visible {
+		opacity: 1;
+		-webkit-transform: none;
+			 -moz-transform: none;
+				-ms-transform: none;
+				 -o-transform: none;
+						transform: none;
+	}
+	
+/* Outline Out */
+.hvr-outline-out {
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  position: relative;
+}
+.hvr-outline-out:before {
+  content: '';
+  position: absolute;
+  border: #283444 solid 6px;
+  border-radius: 50%;
+  top: -5px;
+  right: -5px;
+  bottom: -5px;
+  left: -5px;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: top, right, bottom, left, border-color;
+  transition-property: top, right, bottom, left, border-color;
+}
+.hvr-outline-out:hover:before, .hvr-outline-out:focus:before, .hvr-outline-out:active:before {
+  top: -15px;
+  right: -15px;
+  bottom: -15px;
+  left: -15px;
+  border-color: #5691e7;
+}
+
+
 /* media queries */
+@media screen and (max-width: 1200px) {
+	.li-box {margin: 10px;}
+	
+}
+
+@media screen and (max-width: 1000px) {
+	.custom-ls {display: grid;}
+	.li-box {margin: 25px;}
+	
+}
+
+
  @media screen and (max-width: 767px) {
+	 
+	 .modal-content {width: 90%;
+	 margin: 0 auto;}
+	 
      .custom-marl {
          margin: 0px;
     }
@@ -462,14 +581,7 @@
         margin-left: 25px;
          width: 100%;
     }
-     .li-box {
-        width: 250px;
-         border-radius: 0px;
-    }
-     .list-div {
-        width: 250px;
-         border-radius: 0px;
-    }
+	
      #portfoliosec, #aboutsec, #skillssec, #contactsec {
         margin-top: -54px;
     }
@@ -482,14 +594,5 @@
     }
      .hoverdiv {
         width: 300px;
-    }
-     #jq[data-aos-delay='200'] {
-        transition-delay: 0s;
-    }
-     #bs[data-aos-delay='200'] {
-        transition-delay: 0s;
-    }
-     #ps[data-aos-delay='200'] {
-        transition-delay: 0s;
     }
 }
