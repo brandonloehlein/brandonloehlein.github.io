@@ -544,6 +544,8 @@ border: none;}
 
  @media screen and (max-width: 767px) {
 	 
+	 .modal-dialog {top: 20%;}
+	 
 	 .modal-content {width: 90%;
 	 margin: 0 auto;}
 	 
